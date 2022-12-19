@@ -41,5 +41,19 @@ namespace Encrypt
         {
             this.Close();
         }
+
+        
+        private void menuHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuHelpAbout_Click_1(object sender, EventArgs e)
+        {
+            using (About about = new About())
+            {
+                about.ShowDialog();
+            }
+        }
     }
 }

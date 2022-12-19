@@ -36,17 +36,17 @@
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuNew = new System.Windows.Forms.ToolStripMenuItem();
             this.quickScanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mailAttachmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.protectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.speedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.newSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutEncryptoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.supportInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipsAndTricksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gettingStartedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +81,7 @@
             this.speedToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.settingToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.menuHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -105,14 +105,29 @@
             this.menuNew.Image = ((System.Drawing.Image)(resources.GetObject("menuNew.Image")));
             this.menuNew.Name = "menuNew";
             this.menuNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.menuNew.Size = new System.Drawing.Size(216, 26);
+            this.menuNew.Size = new System.Drawing.Size(212, 26);
             this.menuNew.Text = "Homepage";
             // 
             // quickScanToolStripMenuItem
             // 
             this.quickScanToolStripMenuItem.Name = "quickScanToolStripMenuItem";
-            this.quickScanToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.quickScanToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.quickScanToolStripMenuItem.Text = "Quick Scan";
+            // 
+            // newSessionToolStripMenuItem
+            // 
+            this.newSessionToolStripMenuItem.Name = "newSessionToolStripMenuItem";
+            this.newSessionToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.newSessionToolStripMenuItem.Text = "New session";
+            // 
+            // menuExit
+            // 
+            this.menuExit.Image = ((System.Drawing.Image)(resources.GetObject("menuExit.Image")));
+            this.menuExit.Name = "menuExit";
+            this.menuExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.menuExit.Size = new System.Drawing.Size(212, 26);
+            this.menuExit.Text = "Exit";
+            this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
             // mailAttachmentsToolStripMenuItem
             // 
@@ -123,6 +138,18 @@
             this.mailAttachmentsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.mailAttachmentsToolStripMenuItem.Text = "System ";
             this.mailAttachmentsToolStripMenuItem.Click += new System.EventHandler(this.mailAttachmentsToolStripMenuItem_Click);
+            // 
+            // findToolStripMenuItem
+            // 
+            this.findToolStripMenuItem.Name = "findToolStripMenuItem";
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.findToolStripMenuItem.Text = "Find ";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.searchToolStripMenuItem.Text = "Search";
             // 
             // protectionToolStripMenuItem
             // 
@@ -149,49 +176,25 @@
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.settingToolStripMenuItem.Text = "Setting ";
             // 
-            // menuExit
+            // menuHelp
             // 
-            this.menuExit.Image = ((System.Drawing.Image)(resources.GetObject("menuExit.Image")));
-            this.menuExit.Name = "menuExit";
-            this.menuExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.menuExit.Size = new System.Drawing.Size(216, 26);
-            this.menuExit.Text = "Exit";
-            this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
-            // 
-            // newSessionToolStripMenuItem
-            // 
-            this.newSessionToolStripMenuItem.Name = "newSessionToolStripMenuItem";
-            this.newSessionToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.newSessionToolStripMenuItem.Text = "New session";
-            // 
-            // findToolStripMenuItem
-            // 
-            this.findToolStripMenuItem.Name = "findToolStripMenuItem";
-            this.findToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.findToolStripMenuItem.Text = "Find ";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.searchToolStripMenuItem.Text = "Search";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutEncryptoToolStripMenuItem,
+            this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuHelpAbout,
             this.supportInfoToolStripMenuItem,
             this.tipsAndTricksToolStripMenuItem,
             this.gettingStartedToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.menuHelp.Name = "menuHelp";
+            this.menuHelp.Size = new System.Drawing.Size(53, 24);
+            this.menuHelp.Text = "Help";
+            this.menuHelp.Click += new System.EventHandler(this.menuHelp_Click);
             // 
-            // aboutEncryptoToolStripMenuItem
+            // menuHelpAbout
             // 
-            this.aboutEncryptoToolStripMenuItem.Name = "aboutEncryptoToolStripMenuItem";
-            this.aboutEncryptoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.aboutEncryptoToolStripMenuItem.Text = "About Encrypto";
+            this.menuHelpAbout.Image = ((System.Drawing.Image)(resources.GetObject("menuHelpAbout.Image")));
+            this.menuHelpAbout.Name = "menuHelpAbout";
+            this.menuHelpAbout.Size = new System.Drawing.Size(216, 26);
+            this.menuHelpAbout.Text = "About Encrypto";
+            this.menuHelpAbout.Click += new System.EventHandler(this.menuHelpAbout_Click_1);
             // 
             // supportInfoToolStripMenuItem
             // 
@@ -248,8 +251,8 @@
         private System.Windows.Forms.ToolStripMenuItem newSessionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutEncryptoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuHelp;
+        private System.Windows.Forms.ToolStripMenuItem menuHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem supportInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipsAndTricksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gettingStartedToolStripMenuItem;

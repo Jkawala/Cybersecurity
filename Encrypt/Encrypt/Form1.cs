@@ -26,7 +26,7 @@ namespace Encrypt
         {
             try
             {
-                pictureBox1.Width += 2;
+                pictureBox1.Width += 4;
 
                 if (pictureBox1.Width >= 600)
                 {

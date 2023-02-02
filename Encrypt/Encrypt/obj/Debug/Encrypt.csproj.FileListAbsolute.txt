@@ -1,6 +1,3 @@
-c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.csprojAssemblyReference.cache
-c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Form1.resources
-c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Form2.resources
 c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Properties.Resources.resources
 c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.csproj.GenerateResource.cache
 c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.csproj.CoreCompileInputs.cache
@@ -9,4 +6,8 @@ c:\users\spotk\source\repos\Encrypt\Encrypt\bin\Debug\Encrypt.exe
 c:\users\spotk\source\repos\Encrypt\Encrypt\bin\Debug\Encrypt.pdb
 c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.exe
 c:\users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.pdb
-C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.About.resources
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.LoadingScreen.resources
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Main.resources
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.FullScan.resources
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.csprojAssemblyReference.cache
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Options.resources

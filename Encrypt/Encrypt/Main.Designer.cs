@@ -45,6 +45,11 @@
             this.productInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fullscreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.propertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetWindowsLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeWindowsLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -76,6 +81,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Other Tools ";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -144,18 +150,25 @@
             this.newSessionToolStripMenuItem.Image = global::Encrypt.Properties.Resources.icons8_home_office;
             this.newSessionToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newSessionToolStripMenuItem.Name = "newSessionToolStripMenuItem";
-            this.newSessionToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.newSessionToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.newSessionToolStripMenuItem.Text = "Menu";
             this.newSessionToolStripMenuItem.Click += new System.EventHandler(this.newSessionToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolboxToolStripMenuItem,
+            this.fullscreenToolStripMenuItem,
+            this.propertiesToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.viewToolStripMenuItem.Text = "View ";
             // 
             // settingToolStripMenuItem
             // 
+            this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resetWindowsLayoutToolStripMenuItem,
+            this.changeWindowsLayoutToolStripMenuItem});
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.settingToolStripMenuItem.Text = "Setting";
@@ -173,19 +186,19 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.helpToolStripMenuItem.Text = "Help ";
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
             // 
             // productInfoToolStripMenuItem
             // 
             this.productInfoToolStripMenuItem.Name = "productInfoToolStripMenuItem";
-            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.productInfoToolStripMenuItem.Text = "Product Info";
             // 
             // button5
@@ -209,6 +222,37 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // toolboxToolStripMenuItem
+            // 
+            this.toolboxToolStripMenuItem.Name = "toolboxToolStripMenuItem";
+            this.toolboxToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.toolboxToolStripMenuItem.Text = "Toolbox";
+            this.toolboxToolStripMenuItem.Click += new System.EventHandler(this.toolboxToolStripMenuItem_Click);
+            // 
+            // fullscreenToolStripMenuItem
+            // 
+            this.fullscreenToolStripMenuItem.Name = "fullscreenToolStripMenuItem";
+            this.fullscreenToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.fullscreenToolStripMenuItem.Text = "Fullscreen";
+            // 
+            // propertiesToolStripMenuItem
+            // 
+            this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
+            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.propertiesToolStripMenuItem.Text = "Properties ";
+            // 
+            // resetWindowsLayoutToolStripMenuItem
+            // 
+            this.resetWindowsLayoutToolStripMenuItem.Name = "resetWindowsLayoutToolStripMenuItem";
+            this.resetWindowsLayoutToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.resetWindowsLayoutToolStripMenuItem.Text = "Reset Windows Layout ";
+            // 
+            // changeWindowsLayoutToolStripMenuItem
+            // 
+            this.changeWindowsLayoutToolStripMenuItem.Name = "changeWindowsLayoutToolStripMenuItem";
+            this.changeWindowsLayoutToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.changeWindowsLayoutToolStripMenuItem.Text = "Change Windows Layout ";
             // 
             // Main
             // 
@@ -253,5 +297,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ToolStripMenuItem newSessionToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolboxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fullscreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem propertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetWindowsLayoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeWindowsLayoutToolStripMenuItem;
     }
 }

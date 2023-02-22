@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,17 +39,17 @@
             this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.containingCheckBox = new System.Windows.Forms.RadioButton();
-            this.selectSearchDirButton = new System.Windows.Forms.Button();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.containingCheckBox = new System.Windows.Forms.RadioButton();
+            this.selectSearchDirButton = new System.Windows.Forms.Button();
             this.searchDirTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -83,7 +84,7 @@
             // 
             this.menToolStripMenuItem.Image = global::Encrypt.Properties.Resources.icons8_home_office;
             this.menToolStripMenuItem.Name = "menToolStripMenuItem";
-            this.menToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.menToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.menToolStripMenuItem.Text = "Menu";
             this.menToolStripMenuItem.Click += new System.EventHandler(this.menToolStripMenuItem_Click);
             // 
@@ -112,19 +113,19 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.helpToolStripMenuItem.Text = "Help ";
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
             // 
             // productInfoToolStripMenuItem
             // 
             this.productInfoToolStripMenuItem.Name = "productInfoToolStripMenuItem";
-            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.productInfoToolStripMenuItem.Text = "Product Info";
             // 
             // groupBox1
@@ -142,31 +143,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Scan Options ";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // containingCheckBox
-            // 
-            this.containingCheckBox.AutoSize = true;
-            this.containingCheckBox.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.containingCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
-            this.containingCheckBox.Location = new System.Drawing.Point(32, 127);
-            this.containingCheckBox.Name = "containingCheckBox";
-            this.containingCheckBox.Size = new System.Drawing.Size(200, 24);
-            this.containingCheckBox.TabIndex = 6;
-            this.containingCheckBox.TabStop = true;
-            this.containingCheckBox.Text = "Selected Folders ";
-            this.containingCheckBox.UseVisualStyleBackColor = true;
-            this.containingCheckBox.CheckedChanged += new System.EventHandler(this.containingCheckBox_CheckedChanged);
-            // 
-            // selectSearchDirButton
-            // 
-            this.selectSearchDirButton.BackColor = System.Drawing.SystemColors.Control;
-            this.selectSearchDirButton.Location = new System.Drawing.Point(477, 150);
-            this.selectSearchDirButton.Name = "selectSearchDirButton";
-            this.selectSearchDirButton.Size = new System.Drawing.Size(163, 30);
-            this.selectSearchDirButton.TabIndex = 5;
-            this.selectSearchDirButton.Text = "Browse";
-            this.selectSearchDirButton.UseVisualStyleBackColor = true;
-            this.selectSearchDirButton.Click += new System.EventHandler(this.selectSearchDirButton_Click);
             // 
             // radioButton4
             // 
@@ -215,6 +191,31 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // containingCheckBox
+            // 
+            this.containingCheckBox.AutoSize = true;
+            this.containingCheckBox.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.containingCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
+            this.containingCheckBox.Location = new System.Drawing.Point(32, 127);
+            this.containingCheckBox.Name = "containingCheckBox";
+            this.containingCheckBox.Size = new System.Drawing.Size(200, 24);
+            this.containingCheckBox.TabIndex = 6;
+            this.containingCheckBox.TabStop = true;
+            this.containingCheckBox.Text = "Selected Folders ";
+            this.containingCheckBox.UseVisualStyleBackColor = true;
+            this.containingCheckBox.CheckedChanged += new System.EventHandler(this.containingCheckBox_CheckedChanged);
+            // 
+            // selectSearchDirButton
+            // 
+            this.selectSearchDirButton.BackColor = System.Drawing.SystemColors.Control;
+            this.selectSearchDirButton.Location = new System.Drawing.Point(477, 150);
+            this.selectSearchDirButton.Name = "selectSearchDirButton";
+            this.selectSearchDirButton.Size = new System.Drawing.Size(163, 30);
+            this.selectSearchDirButton.TabIndex = 5;
+            this.selectSearchDirButton.Text = "Browse";
+            this.selectSearchDirButton.UseVisualStyleBackColor = true;
+            this.selectSearchDirButton.Click += new System.EventHandler(this.selectSearchDirButton_Click);
+            // 
             // searchDirTextBox
             // 
             this.searchDirTextBox.Location = new System.Drawing.Point(32, 151);
@@ -241,18 +242,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Where To Scan";
             // 
-            // radioButton5
+            // radioButton7
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.radioButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
-            this.radioButton5.Location = new System.Drawing.Point(32, 29);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(175, 27);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "My Computer ";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.radioButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
+            this.radioButton7.Location = new System.Drawing.Point(32, 97);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(200, 24);
+            this.radioButton7.TabIndex = 8;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "All Local Drives ";
+            this.radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton6
             // 
@@ -267,18 +268,18 @@
             this.radioButton6.Text = "My documents";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // radioButton5
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.radioButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
-            this.radioButton7.Location = new System.Drawing.Point(32, 97);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(200, 24);
-            this.radioButton7.TabIndex = 8;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "All Local Drives ";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
+            this.radioButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(21)))), ((int)(((byte)(0)))));
+            this.radioButton5.Location = new System.Drawing.Point(32, 29);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(175, 27);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "My Computer ";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -311,6 +312,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Options";

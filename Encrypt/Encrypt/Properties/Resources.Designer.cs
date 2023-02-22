@@ -83,6 +83,16 @@ namespace Encrypt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_options_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-options-64", resourceCulture);

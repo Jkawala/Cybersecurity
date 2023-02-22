@@ -11,3 +11,4 @@ C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Main.resources
 C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.FullScan.resources
 C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.csprojAssemblyReference.cache
 C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Options.resources
+C:\Users\spotk\source\repos\Encrypt\Encrypt\obj\Debug\Encrypt.Tools.resources

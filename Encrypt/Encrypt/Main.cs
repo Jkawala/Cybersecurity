@@ -101,6 +101,20 @@ namespace Encrypt //Main Menu Form/Form 2
         {
 
         }
+
+        private void toolboxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Hide the current form.
+
+            Tools Tools = new Tools();
+
+            Tools.Show();
+        }
     }
 }
 
